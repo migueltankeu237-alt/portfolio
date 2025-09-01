@@ -1,0 +1,128 @@
+section{
+    margin-top: 150px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding:  50px;
+    gap: 100px;
+    margin-bottom: 100px;
+}
+
+section .text{
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    gap: 50px;
+}
+
+.titre{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px 0px;
+    border-bottom:1px solid #000 ;
+}
+.contact{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+} 
+em{
+    font-style: normal;
+    font-size: 1.2em;
+}
+
+.form-nom-email {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-column{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+.nom{
+    display: flex;
+    flex-direction: column;
+  border: 1px solid black;
+  padding: 50px;
+  background-color: #e49a98;
+    border-radius: 10px;
+
+}
+.label{
+    display: flex;
+    flex-direction: column;
+}
+input{
+    padding: 10px;
+    outline: none;
+    border-top: none;
+    border-right: none;
+    border-radius: 2px;
+    border-radius: 5px;
+}
+
+
+textarea {
+    border-radius: 5px;
+  padding: 5px;
+  border-radius: 3px;
+}
+
+label {
+  margin-bottom: 10px;
+}
+button{
+    padding: 10px;
+    width: 10vw;
+    margin-top: 20px;
+    background-color: #e49a98;
+    color: white;
+    border-radius: 5px;
+    border: 1px solid white;
+    cursor: pointer;
+}
+button:hover{
+    background-color: white;
+    color: #e49a98;
+}
+
+    .start{
+        width: 150px;
+    }
+
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin:10px;
+}
+footer a:hover{
+    opacity:0.7;
+}
+@media screen and (max-width:996px) {
+    html{
+        display: block;
+        flex-direction: column;
+    }
+    section{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0;
+    }
+    .nom{
+        width: 100%;
+        padding: 20px 0;
+    }
+    textarea{
+        height: 200px;
+    }
+    .start{
+        width: 150px;
+    }
+}

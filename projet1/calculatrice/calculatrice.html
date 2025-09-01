@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculatrice</title>
+    <link rel="stylesheet" href="calculatrice.css">
+</head>
+<body>
+    <a href="/portfolio.html">
+        <img src="/images/arrow.png" alt="" width="100px" class="a">
+    </a>
+    <h2>calculatrice</h2>
+    <input type="text" id="log" >
+    <input type="text" id="texte" >
+    <table border="1">
+        <form>
+            <tr>
+                <th colspan="5"><input type="text" id="text" readonly></th>
+            </tr>
+            <tr>
+                <th><input type="button" value="7" id="7" onclick="sept()"></th>
+                <th><input type="button" value="8" id="8" onclick="huit()"></th>
+                <th><input type="button" value="9" id="9" onclick="neuf()"></th>
+                <th><input type="button" value="*" id="x" onclick="fois()"></th>
+                <th style="background-color: red;"><a href="calculatrice.html"><input type="button" style="font-size: 30px; font-weight: bold; height: 2em; width: 3.5em;" value="DEL"></a></th>
+            </tr>
+            <tr>
+                <th><input type="button" value="4" id="4" onclick="quatre()"></th>
+                <th><input type="button" value="5" id="5" onclick="cinq()"></th>
+                <th><input type="button" value="6" id="6" onclick="six()"></th>
+                <th><input type="button" value="+" id="+" onclick="plus()"></th>
+                <th rowspan="2"><input type="button" value="=" id="egale" onclick="egal()" width="100%" style="padding: 0;"></th>  
+            </tr>
+            <tr>
+                <th><input type="button" value="1" id="1" onclick="un()"></th>
+                <th><input type="button" value="2" id="2" onclick="deux()"></th>
+                <th><input type="button" value="3" id="3" onclick="trois()"></th>
+                <th><input type="button" style="font-family: Monotype Corsiva;" value="-" id="-" onclick="moins()"></th>
+            </tr>
+            <tr>
+                <th><input type="button" value="0" id="0" onclick="zero()"></th>
+                <th><input type="button" value="." id="." onclick="point()"></th>
+                <th><input type="button" value="+/-" style="font-family: Monotype Corsiva;" id="+/-" onclick="slach()"></th>
+                <th><input type="button" value="/" id="/" onclick="diviser()"></th>
+                <th><input type="button" value="^" id="^" onclick="puissance()"></th>
+            </tr>
+
+        </form>
+    </table>
+    <script src="calculatrice.js"></script>
+</body>
+</html>

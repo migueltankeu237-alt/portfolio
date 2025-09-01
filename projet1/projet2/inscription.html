@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>login form</title>
+	<link rel="stylesheet" href="style/style.css">
+	<link rel="stylesheet" href="style/login.css">
+	 <script src="https://kit.fontawesome.com/e3e68f4d05.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+       <nav>
+            <img src="/img/mon logo2.png" alt=""  width="70px" class="logo">
+            <div class="contenair">
+                <a href="index.html" >Accueil</a>
+                <a href="a-propos.html" >A-propos</a>
+                <a href="#formu"  id="formu" class="Inscription" >Inscription</a>
+                <a href="">Nos articles</a>
+            </div>
+              <img src="/img/menu.png" alt=""  width="70px" class="hanburger">
+       </nav> 
+    </header>
+	<main>
+	<section class="formulaire">
+		<h1>Inscription</h1>
+		<form action="index.php" method="post">
+			<div class="input-box">
+				<input type="text" placeholder="entrer votre nom">
+				<i class="fa-solid fa-user"></i>
+			</div>
+			<div class="input-box">
+				<input type="email" name="email" placeholder="entrer votre email" id="">
+				<i class="fa-solid fa-enveloppe"></i>
+			</div>
+			<div class="input-box">
+				<input type="password" placeholder="entrer votre mot de passe" maxlength="20">
+				<i class="fa-solid fa-lock"></i>
+			</div>
+			<div class="remember-forgot">
+				<label >
+					<input type="checkbox" name="" id="">se souvenir de moi</label>
+				<a href="#">mot de passe oublié ?</a>
+			</div>
+			<input type="submit" value="envoyer" class="login-btn">
+		</form>
+	</section>
+	</main>
+</body>
+</html>

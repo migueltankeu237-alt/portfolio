@@ -1,0 +1,315 @@
+body{
+    font-family: 'manrope';
+    background: linear-gradient(to top, white,#ffe5e4 );
+}
+
+.porte_a-propos{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    margin: 30px;
+    margin-top: 200px;
+}
+.a-propos{
+    width: 400px;
+}
+
+.porte{
+    background-color: #e99f9f;
+    width: 25vw;
+    height: 60vh;
+    border-radius: 50% 50% 5% 5%;
+    position: relative;
+}
+.img{
+  position: absolute;
+  right: -120px;
+}
+.porte2{
+    width: 25vw;
+    height: 60vh;
+    border-radius: 45% 45% 8% 8%;
+    margin-right: 40px; 
+    z-index: -1;
+    background-color:rgba(196, 191, 191, 0.13);
+    position: relative;
+}
+.trainers{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 75px;
+}
+.porte2 img{
+    width: 100%;
+    height: 100%;
+}
+.div {
+    position: relative;
+    background-color: rgba(255, 0, 0, 0.521);
+    backdrop-filter: blur(5px);
+    border-radius: 15px;
+    padding: 10px;
+    text-align: center;
+    margin-left:10px ;
+    bottom: 5rem;
+    color: white;
+    width: 300px;
+    height: 100px;
+}
+.container{
+    position: absolute;
+    background-color: white;
+    right: 0px;
+    bottom: 60px;
+    display: flex;
+    flex-direction: row;
+    width: 200px;
+    gap: 30px;
+    align-items: center;
+}
+.contenair{
+    background-color: white;
+    width: 150px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.star{
+    text-decoration: none;
+    margin-right: 25px;
+    color: red;
+    border: 1px solid red;
+    background-color: white;
+    padding: 5px 80px;
+    border-radius: 5px;
+    cursor: pointer;
+    align-items: center;
+}
+.stare{
+    text-decoration: none;
+    margin-right: 25px;
+    color: white;
+    background-color: red;
+    border: 1px solid red;
+    padding: 05px 80px;
+    border-radius: 5px;
+    cursor: pointer;
+}.start{
+    text-decoration: none;
+    color:white;
+    border: 1px solid red;
+    background-color: red;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    align-items: center;
+
+}
+.star:hover{
+    background-color: red;
+   color:white;
+   transition: 0.5s;
+}
+.stare:hover{
+    background-color:white;
+   color:red;
+   border: 1px solid red;
+   transition: 0.5s;
+}
+ h1{
+    text-align: center;
+    align-items: center;
+}
+span{
+    font-weight: bold;
+    font-size: 2em;
+}
+.ligne{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.h1{
+    position: absolute;
+    z-index: 2;
+    left: 40%;
+    margin-top: 40px;
+}
+.package{
+    background-color:rgba(196, 191, 191, 0.13);
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    padding: 150px 100px;
+    justify-content: center;
+    z-index: -2;
+}
+.div-package{
+    width: 250px;
+    background-color: white;
+    border-radius: 20px;
+    height: 60vh;
+    padding: 30px;
+    padding-bottom: 50px;
+    gap: 20px;
+}
+
+.package p{
+    padding-bottom: 10px;
+}
+
+.porte-shadow{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    margin: 100px;
+}
+.lorem{
+    width: 400px;
+    gap: 20px;
+}
+
+.paysage{
+    background: url(../img&icon/beau-paysage-foret-magique_849761-22304.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+}
+.paysage div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: rgba(48,21,21,0.8);
+    padding: 100px;
+}
+.cube{
+    background-color:rgba(189, 179, 179, 0.315) ;
+    width: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    height: 30px;
+    border-radius: 100%;
+
+}
+.cocher div{
+    display:flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.cocher div i{
+    color:grey;
+    margin-top: 5.5px;
+}
+#icon-red{
+    color: red;
+}
+#mini{
+    color: red;
+    font-size: 1.5em;
+}
+#moyen{
+    color: red;
+ font-size: 2em;
+}
+#grand{
+    color: red;
+    font-size: 3em;
+}
+.paysage div h1{
+font-size: 3em;
+}
+
+.porte3{
+    width: 20vw;
+    height: 55vh;
+    border-radius: 50% 50% 5% 5%;
+    margin-right: 40px; 
+    background-color:#d69294;
+    box-shadow: 15px 15px rgba(49, 46, 46, 0.315);
+}
+
+.porte3 img{
+    width: 100%;
+    height: 100%;
+}
+
+
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin:10px;
+}
+footer a:hover{
+    opacity: 0.7;
+}
+@media screen and (max-width:996px) {
+    html{
+        display: block;
+        flex-flow: column nowrap;
+    }
+    .porte_a-propos{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .porte{
+       width: 40vw;
+        height: 500px;
+        margin-left: 100px;
+        background-color: red;
+    }
+    .img{
+        position:initial;
+        bottom: 0;
+        width:500px;
+        height:500px
+    }
+    .porte2{
+        width: 40vw;
+        height: 500px;
+        margin-left: 100px;
+        padding:0;
+        background-color: red;
+    }
+    .trainers{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+    .div{
+        position:initial;
+        height:100px;
+        margin-left: 100px;
+        align-items: center;
+        display:flex;
+        flex-direction :column;
+    }
+    .package{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .porte-shadow{
+        flex-direction: column;
+    }
+    .porte3{
+        width: 50vw;
+        height: 50vh;
+    }
+}
+

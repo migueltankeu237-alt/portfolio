@@ -1,0 +1,104 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	background: url(img.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	font-family: 'Poppins', sans-serif;
+}
+section{
+	background-color: transparent;
+	border: 2px solid rgba(255,255,255,0.2);
+	padding: 45px;
+	width: 420px;
+	border-radius: 20px;
+	backdrop-filter: blur(20px);
+} 
+section h1{
+	font-size: 30px;
+	text-align: center;
+	color: #fff;
+	margin-bottom: 20px;
+}
+
+.input-box{
+	width: 100%;
+	position: relative;
+	margin-bottom: 20px;
+}
+
+.input-box input{
+	width: 100%;
+	padding: 15px;
+	border-radius: 25px;
+	outline: none;
+	background-color: transparent;
+	border:2px solid rgba(255,255,255,0.2);
+	color: #fff ;
+	padding-right: 40px;
+
+}
+
+.input-box input::placeholder{
+	color: #fff;
+}
+
+.input-box i{
+	position: absolute;
+	transform: translateY(-50%);
+	right: 20px;
+	top: 50%;
+	color: #fff;
+}
+
+.remember-forgot{
+	display: flex;
+	justify-content: space-between;
+	font-size: 14px;
+	color: #fff;
+	margin-bottom: 25px;
+}
+  a{
+	color: #fff;
+	text-decoration: none;
+	transition: 0.2s;
+	font-weight: bold;
+}
+
+a:hover{
+	text-decoration: underline;
+	transition: 2s;
+}
+.login-btn{
+	width: 100%;
+	padding: 15px;
+	border-radius: 25px;
+	cursor: pointer;
+	outline: none;
+	border: 0;
+	font-weight: bold;
+	border: 2px solid transparent;
+	transition: 0.5s;
+}
+.login-btn:hover{
+	background-color: transparent;
+	border: 2px solid rgba(255,255,255,0.2);
+	color: #fff;
+}
+.register-link{
+	text-align: center;
+	margin-top: 25px;
+	color: #fff;
+	font-size: 14px;
+}
+input:focus{
+	transform: translateY(15);
+}

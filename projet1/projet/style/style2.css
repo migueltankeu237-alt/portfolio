@@ -1,0 +1,143 @@
+
+ main section div  a{
+    text-decoration: none;
+    color: white;
+    margin-top: 15px;
+    border : 1px solid red;
+    background-color: red;
+    padding: 10px 20px;
+    max-width: 100px;
+    border-radius: 5px;
+} 
+main section div  a:hover{
+    background-color: white;
+    color: red;
+    border: 1px solid red;
+    transition: 1s;
+}
+
+.porte{
+    background-color: #e99f9f   ;
+    border: 1px solid  #e99f9f;
+    width: 26vw;
+    height: 70vh;
+    border-radius: 50% 50% 3% 3%;
+    margin-right: 90px;
+    z-index: -1;
+}
+ .img{
+    position: absolute;
+    z-index: 1;
+    width: 40vw;
+    height: 480px;
+    right: 20%;
+    bottom: 10px;
+}
+.play{
+    width: 75px;
+    height: 75px;
+    border: 15px solid white;
+    border-radius: 100%;
+    background-color: white;
+    position: relative;
+    right: 20%;
+    z-index: 2;
+}
+main .train{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    margin-top: 200px;
+    z-index: 1;
+    gap: 20px;
+    
+}
+ .a-propos_logo{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top:30px;
+    align-items: center;
+    width: 40%;
+}
+section h1{
+    font-size:2.4em;
+}
+.a-propos{
+width: 350px;
+display: flex;
+flex-direction: column;
+margin-bottom: 20px;
+}
+.icon{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 200px 200px;
+    align-items: center;
+    margin: 100px;
+    gap: 100px;
+}
+
+.div{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.propos{
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+margin-bottom: 100px;
+}
+ .h1{
+    text-align: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.logo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-left: 50px;
+    height: 150px;
+    gap: 20px;
+    width: 400px;
+    padding: 0;
+}
+.logo img{
+    width: 75px;
+    height: 75px;
+}
+
+
+.div div{
+    color: red;
+    background-color:rgba(196, 191, 191, 0.13);
+    padding:10px 20px;
+    margin-left: 70px;
+    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+    font-size: 2em;
+    border-radius: 10px;
+    width: 50px;
+}
+.div div i{
+    padding: 10px;
+}
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin:10px;
+    background-color: #ffe5e4;
+    box-shadow: 0 0 10px 0 #807171 ;
+    padding: 10px;
+    margin: 20px;
+}
+footer a:hover{
+    opacity:0.7;
+}
+@media screen and (max-width:996px ) {
+    
+}

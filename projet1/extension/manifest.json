@@ -1,0 +1,19 @@
+{
+    "manifest_version": 3,
+    "name":"fast search",
+    "version":"2.0",
+    "description":"Extention de recherche rapide",
+    "host_permissions": [
+  "https://suggestqueries.google.com/*"
+],
+    "action": {
+        "default_popup":"extention.html",
+        "default_icon":{
+            "16":"icon16.png",
+            "48":"icon48.png",
+            "128":"icon128.png"
+        }
+        
+    } 
+    
+}

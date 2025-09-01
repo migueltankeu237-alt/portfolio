@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header nav{
+    padding: 25px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    font-family: manrope;
+}
+
+.contenair{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 10%;
+    margin-left: -100%;
+    gap: 20px;
+
+}
+
+nav div a{
+    text-decoration: none;
+    color: black;
+}
+body{
+    background:url(/img/pintura-monstruo-entorno-galaxia_931866-34668.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: manrope;
+}
+.hanburger{
+    display: none;
+        position: absolute;
+        right: 20px;
+        top: 30px;
+}
+
+@media screen and (max-width:900px) {
+    *{
+        margin: 0;
+    }
+    body{
+        background-size: 1000px;
+    }
+ 
+    .hanburger{
+        display: block;
+        margin-right: 50px;
+        cursor: pointer;
+    }
+    .contenair {
+        position: absolute;
+        backdrop-filter: blur(10px);
+        flex-flow: column wrap;
+        align-items: center;
+        justify-content: center;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        font-size: 2em;
+        gap: 60px;
+        margin-left: -100%;
+        transition: all 0.5s ease-out ;
+        background-color:rgba(255, 255, 255, 0.267)
+        
+    }
+    .contenair.content{
+        margin-left: 0;
+    }
+    .croix{
+        display: none;
+    }
+    
+}
