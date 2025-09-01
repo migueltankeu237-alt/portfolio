@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Accueil - Robbie Lens Photographie</title>
+    <link  rel="stylesheet"  href="style/style.css"/>
+    <link  rel="stylesheet"  href="style/index.css"/>
+    <link rel="stylesheet" href="/style/formulaire.css">
+</head>
+
+<body>
+    <!-- entete de la page -->
+    <header>
+        <!-- navbar permettant de naviguer dans le site -->
+        <nav>
+            <a href="index.html" class="lien-icone">
+                <img src="images/logo.png" alt="Logo Robbie Lens" />
+            </a>
+            <!-- lien vers d'autres pages web -->
+            <div>
+                <a href="#">Accueil</a>
+                <a href="a-propos.html">À propos</a>
+                <a href="portfolio.html">Portfolio</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="accueil-introduction">
+            <div>
+                <!-- titre de niveau 1 -->
+                <h1>Robbie Lens Photographie</h1>
+                <p>
+                    Où <em>professionalisme</em> s’allie avec <em>passion</em>. Depuis
+                    plus de 5 ans maintenant, j’exerce mon métier avec la passion
+                    qui m’anime : capturer l’essence de chaque instant.
+                </p>
+                <!-- lien a l'interieure de la page -->
+                <a href="#contact" class="cta">UN PROJET ? ÉCRIVEZ-MOI</a>
+            </div>
+            <!-- photo de robbie lens -->
+            <img src="images/robbie-lens.png" alt="Portrait avec effet de la photographe Robbie Lens" />
+        </section>
+        <section class="accueil-photos">
+                <!-- titre de niveau 2 -->
+            <h2>Mon dernier projet</h2>
+            <!-- photo des derniers projets de robbie lens -->
+            <div>
+                <img src="images/accueil/element-1.png" alt="Twelve apostles - Australie" />
+                <img src="images/accueil/element-2.png" alt="Wai-O-Tapu - Nouvelle-Zélande" />
+                <img src="images/accueil/element-3.png" alt="Parc National d’Abel Tasman - Nouvelle-Zélande" />
+            </div>
+            <div>
+                <img src="images/accueil/element-4.png" alt="Lac Rotorua - Nouvelle-Zélande" />
+                <img src="images/accueil/element-5.png" alt="Milford Sound - Nouvelle-Zélande" />
+                <img src="images/accueil/element-6.png" alt="Lac Wanaka - Nouvelle-Zélande" />
+            </div>
+        </section>
+        <section id="contact" class="section-contact">
+                <!-- titre de niveau 2 -->
+            <h2>Parlons de votre projet</h2>
+            <!-- formulaire d'inscription -->
+            <form method="get" action="">
+                <div class="form-nom-email">
+                    <div class="form-column">
+                        <label for="nom">nom</label>
+                        <input type="text" name="nom" id="nom" required />
+                    </div>
+                    <div class="form-column">
+                        <label for="email">email</label>
+                        <input type="e-mail" name="email" id="nom" />
+                    </div>
+                </div>
+                <label for="message">message</label>
+                <textarea name="message" id="message" rows="10"></textarea>
+                <input type="submit" value="ENVOYER" class="cta" />
+            </form>
+        </section>
+    </main>
+    <!-- pied de page -->
+    <footer>
+        <!-- lien vers la page d'accueil -->
+        <a href="#" class="lien-icone">
+            <img src="images/logo.png" alt="Logo Robbie Lens" />
+        </a>
+        <!-- lien de navigation vers un autre site -->
+        <div>
+            <a target="_blank" href="https://twitter.com/" class="lien-icone">
+                <img src="images/twitter.png" alt="Logo Twitter" />
+            </a>
+            <a target="_blank" href="https://www.instagram.com/" class="lien-icone">
+                <img src="images/instagram.png" alt="Logo Instagram" />
+            </a>
+        </div>
+    </footer>
+</body>
+
+</html>
