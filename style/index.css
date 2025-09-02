@@ -149,8 +149,8 @@ h1{
 
   .accueil-introduction img {
     order: 1;
-    margin-bottom: 20px;
-    width: 70%;
+    width: 100%;
+    height: 45vh;
   }
 
   .accueil-photos {
