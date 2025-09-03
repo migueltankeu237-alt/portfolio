@@ -47,3 +47,9 @@
   display: flex;
 }
 
+@media screen and (max-width:996px) {
+  .grid-paysages{
+    display: flex;
+    flex-direction: column;
+  }
+}
