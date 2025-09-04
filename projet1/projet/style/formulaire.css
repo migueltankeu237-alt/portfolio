@@ -49,7 +49,7 @@ em{
     flex-direction: column;
   border: 1px solid black;
   padding: 50px;
-  background-color: #e49a98;
+  background:linear-gradient(#e49a98, white);
     border-radius: 10px;
 
 }

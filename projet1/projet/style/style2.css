@@ -1,5 +1,4 @@
-
- main section div  a{
+main section div  a{
     text-decoration: none;
     color: white;
     margin-top: 15px;
@@ -30,7 +29,7 @@ main section div  a:hover{
     z-index: 1;
     width: 40vw;
     height: 480px;
-    right: 20%;
+    right: 16%;
     bottom: 10px;
 }
 .play{
@@ -40,8 +39,9 @@ main section div  a:hover{
     border-radius: 100%;
     background-color: white;
     position: relative;
-    right: 20%;
+    left: 55%;
     z-index: 2;
+    bottom: 80%;
 }
 main .train{
     display: flex;
@@ -139,5 +139,29 @@ footer a:hover{
     opacity:0.7;
 }
 @media screen and (max-width:996px ) {
-    
+    .train{
+        align-items: center;
+        justify-content: center;
+    }
+    .a-propos_logo{
+        order: 1;
+    }
+    .porte{
+        width:90vw;
+    }
+    .porte-img{
+        order: 2;
+        margin-left: 200px;
+    }
+    .img{
+       bottom: 4%;
+       width: 95vw;
+       height: 70vh; 
+       right: 50px;
+    }
+    .play{
+        bottom: 530px;
+        left: 200px;
+
+    }
 }
