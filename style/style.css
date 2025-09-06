@@ -8,6 +8,9 @@ body {
   background-color: #1f2039;
 }
 
+.entete{
+  padding: 20px;
+}
 
 .entete a {
   position: relative;
@@ -75,13 +78,22 @@ footer {
 }
 
 .lien-icone {
-  margin-left: 30px;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
 }
-
-.lien-icone:hover {
-  opacity: 0.5;
+.lien-icone span{
+  font-size: 2em;
+  animation: span 1s linear infinite;
 }
-
+@keyframes span {
+  100%{
+    color: #d803f2;
+  }
+}
+.lien-icone p{
+  color: #242424;
+}
 section {
   padding: 80px;
 }
@@ -101,11 +113,14 @@ nav{
   align-items: center;
   background-color: white;
   width: 100%;
-  z-index: 3;
+  z-index: 100;
 }
 
 nav a {
   margin-left: 20px;
+}
+p{
+  font-size: 2em;
 }
 
 @media screen and (max-width: 996px) {

@@ -42,18 +42,73 @@ section h1{
   padding-right: 80px;
 }
 
-.section-contact h2 {
-  color: #a5b4fc;
-  text-align: center;
-  margin-bottom: 50px;
+.section-contact{
+align-items: center;
+margin-left: 200px;
+}
+.contenair{
+    position: relative;
+    width: 60vw;
+    height: 70vh;
+    background-color: #1c1c1c;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.contenair::before{
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 60vw;
+    height: 70vh;
+    background: linear-gradient(0deg,transparent,
+     #03fe78,#03fe78);
+     transform-origin: bottom right;
+     animation: animate 7s linear infinite;
+}
+.contenair::after{
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 60vw;
+    height: 70vh;
+    background: linear-gradient(0deg,transparent,
+    #d803f2,#d803f2);
+    transform-origin: bottom right;
+    animation: animate 7s linear infinite;
+    animation-delay: 3s;
+}
+@keyframes  animate {
+    100%{
+        transform: rotate(360deg);
+    }
 }
 
+.form{
+    position: absolute;
+    inset: 3px;
+    border-radius: 8px;
+    background: #24232a;
+    z-index: 10;
+    padding: 40px 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.form h2{
+    text-align: center;
+    letter-spacing: 0.1rem;
+    color: #03fe78;
+}
 form {
   display: flex;
   flex-direction: column;
   max-width: 1000px;
   margin: auto;
   color: white;
+  width: 100%;
+  height: 100%;
 }
 
 .form-nom-email {
@@ -67,6 +122,7 @@ form {
   display: flex;
   flex-direction: column;
   margin-bottom: 20px;
+  width: 100%;
 }
 
 #nom,
@@ -81,21 +137,28 @@ label {
   margin-bottom: 10px;
 }
 
-input[type='submit'] {
+input[type="submit"] {
   width: 200px;
+  background: linear-gradient(#03fe78,#d803f2);
+  color: white;
+  border-radius: 50px;
+  padding: 24px 30px;
+  text-decoration: none;
   margin: auto;
   margin-top: 30px;
   border: none;
+  cursor: pointer;
 }
-p{
-  font-size: 2em;
+input[type="submit"]:hover{
+  background: linear-gradient(#d803f2,#03fe78);
 }
+
 h1{
   font-size: 3em;
 }
 
 .photo{
-  clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
+  /* clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%); */
   width: 100%;
 }
 .container{
@@ -116,6 +179,10 @@ h1{
   animation: tankeu  1s infinite;
 
 }
+sup{
+  font-size: 1.5em;
+  color: green;
+}
 @keyframes tankeu {
     0%,49%{
         background-color: transparent;
@@ -128,12 +195,7 @@ h1{
     }
 }
 
-@media screen and (max-width:900px) {
-    .container{
-        width:100vw;
-        margin: 0;
-    }
-}
+
 
 @media screen and (max-width: 996px) {
   .accueil-introduction {
@@ -151,8 +213,8 @@ h1{
 
   .accueil-introduction img {
     order: 1;
-    width: 100%;
-    height: 45vh;
+    width: 80%;
+    height: 80%;
   }
 
   .accueil-photos {
@@ -164,13 +226,19 @@ h1{
     width: 100%;
   }
 
-  .section-contact {
-    padding: 50px 20px;
-    background-color: transparent;
-  }
 
   .form-nom-email {
     flex-direction: column;
     gap: 0;
   }
+   .contenair {
+    height: 70vh;
+  }
+  .contenair::before{
+    height: 70vh;
+  }
+  .contenair::after{
+    height: 70vh;
+  }
+   
 }

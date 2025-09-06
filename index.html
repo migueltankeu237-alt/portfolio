@@ -6,7 +6,6 @@
     <title>Accueil -Miguel tankeu</title>
     <link  rel="stylesheet"  href="style/style.css"/>
     <link  rel="stylesheet"  href="style/index.css"/>
-    <link rel="stylesheet" href="/style/formulaire.css">
 </head>
 
 <body>
@@ -15,7 +14,7 @@
         <!-- navbar permettant de naviguer dans le site -->
         <nav>
             <a href="index.html" class="lien-icone">
-                <img src="images/mon logo2.png" alt="Logo miguel tankeu" width="80px"  />
+                <span>M</span><p>IGUEL</p>&nbsp;&nbsp; <span>T</span><p>ANKEU</p>
             </a>
             <!-- lien vers d'autres pages web -->
             <div class="entete">
@@ -42,7 +41,7 @@
                 <a href="#contact" class="cta">LAISSER UN MESSAGE</a>
             </div>
             <!-- photo de robbie lens -->
-            <img src="images/Jeune homme concentré devant l'ordinateur.png" alt="portrait de Miguel Tankeu" height="450px" class="photo" />
+            <img src="images/jeune homme concentré devant l'ordinateur.jpg" alt="portrait de Miguel Tankeu" height="450px" class="photo" />
         </section>
         <section class="accueil-photos">
                 <!-- titre de niveau 2 -->
@@ -58,24 +57,27 @@
             </div>
         </section>
         <section id="contact" class="section-contact">
-                <!-- titre de niveau 2 -->
-            <h2>Parlons de votre MESSAGE</h2>
-            <!-- formulaire d'inscription -->
-            <form action="https://formspree.io/f/mwpnweol" method="POST">
-                <div class="form-nom-email">
-                    <div class="form-column">
-                        <label for="nom">nom</label>
-                        <input type="text" name="nom" id="nom" required />
-                    </div>
-                    <div class="form-column">
-                        <label for="email">email</label>
-                        <input type="e-mail" name="email" id="nom" />
-                    </div>
+            <div class="contenair">
+                <div class="form">
+                    <h2>Parlons de votre MESSAGE</h2>
+                    <!-- formulaire d'inscription -->
+                    <form action="https://formspree.io/f/mwpnweol" method="POST">
+                        <div class="form-nom-email">
+                            <div class="form-column">
+                                <label for="nom">nom <sup>*</sup></label>
+                                <input type="text" name="nom" id="nom" required />
+                            </div>
+                            <div class="form-column">
+                                <label for="email">email <sup>*</sup></label>
+                                <input type="e-mail" name="email" id="nom" />
+                            </div>
+                        </div>
+                        <label for="message">message <sup>*</sup></label>
+                        <textarea name="message" id="message"  rows="6"></textarea>
+                        <input type="submit" value="ENVOYER" class="cta" />
+                    </form>
                 </div>
-                <label for="message">message</label>
-                <textarea name="message" id="message" rows="10"></textarea>
-                <input type="submit" value="ENVOYER" class="cta" />
-            </form>
+            </div>
         </section>
     </main>
     <!-- pied de page -->
