@@ -57,8 +57,7 @@ li {
 }
 
 
-header,
-footer {
+header{
   background-color: white;
   padding: 20px 50px;
 }
@@ -98,7 +97,16 @@ section {
   padding: 80px;
 }
 
-footer,
+footer{
+  align-items: center;
+  text-align: center;
+  color: white;
+  margin-bottom: 50px;
+}
+footer p{
+  color: white;
+  font-size: 1em;
+}
 nav {
   display: flex;
   flex-direction: row;
